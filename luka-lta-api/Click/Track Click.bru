@@ -1,0 +1,25 @@
+meta {
+  name: Track Click
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{apiUrl}}/click/track/CCEFE417D3E29476
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "market": "DE",
+    "ipAdress": "127.0.0.1",
+    "userAgent": "Chrome",
+    "referrer": "google.com"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

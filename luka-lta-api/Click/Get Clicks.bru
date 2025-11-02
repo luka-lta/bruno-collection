@@ -1,0 +1,20 @@
+meta {
+  name: Get Clicks
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{apiUrl}}/click/
+  body: none
+  auth: inherit
+}
+
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLmx1a2EtbHRhLmRldiIsImVtYWlsIjoibHVrYUBsdWthLWx0YS5kZXYiLCJzdWIiOiIxIiwiaWF0IjoxNzYyMTA3ODE5LCJleHAiOjE3NjIxOTQyMTl9.cUvTYTO4ag8d_sL69MkoVvIeUwGvpx6JKbtFhfvkh38
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

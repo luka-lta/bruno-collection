@@ -6,8 +6,15 @@ meta {
 
 post {
   url: {{apiUrl}}/auth
-  body: none
+  body: json
   auth: inherit
+}
+
+body:json {
+  {
+    "email": "luka@luka-lta.dev",
+    "password": "12345678"
+  }
 }
 
 settings {
