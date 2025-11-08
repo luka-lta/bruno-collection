@@ -1,0 +1,24 @@
+meta {
+  name: Get Statistics
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{apiUrl}}/statistics/?statistic=device
+  body: none
+  auth: inherit
+}
+
+params:query {
+  statistic: device
+}
+
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLmx1a2EtbHRhLmRldiIsImVtYWlsIjoibHVrYUBsdWthLWx0YS5kZXYiLCJzdWIiOiIxIiwiaWF0IjoxNzYyNjQzODQ0LCJleHAiOjE3NjI3MzAyNDR9.Up915JxPluMBsbSL2xvppSheY0gfQ6yGCdtAmuM70kU
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
