@@ -1,0 +1,20 @@
+meta {
+  name: Get Clicks Filters
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{apiUrl}}/click/filters
+  body: none
+  auth: inherit
+}
+
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLmx1a2EtbHRhLmRldiIsImVtYWlsIjoibHVrYUBsdWthLWx0YS5kZXYiLCJzdWIiOiIxIiwiaWF0IjoxNzYzMzE4NjA0LCJleHAiOjE3NjM0MDUwMDR9.u6ZfEPPwk-utjKAJPmqxRMbjUSdJ0aSbVl4cXHYx-NY
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,24 @@
+meta {
+  name: Load All
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{apiUrl}}/key/?origin=d
+  body: none
+  auth: inherit
+}
+
+params:query {
+  origin: d
+}
+
+headers {
+  Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLmx1a2EtbHRhLmRldiIsImVtYWlsIjoibHVrYUBsdWthLWx0YS5kZXYiLCJzdWIiOiIxIiwiaWF0IjoxNzYzMzE4NjA0LCJleHAiOjE3NjM0MDUwMDR9.u6ZfEPPwk-utjKAJPmqxRMbjUSdJ0aSbVl4cXHYx-NY
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
